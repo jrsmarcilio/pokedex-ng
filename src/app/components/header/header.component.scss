@@ -6,33 +6,64 @@
   height: 70px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #f5db13;
   color: white;
   font-weight: 600;
+  box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
 }
 
 .toolbar img {
   margin: 0 16px;
 }
 
-.spacer {
-  flex: 1;
+.header-container {
+  width: 65vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.links {
-  width: 400px;
-  margin: 0 16px;
-
+.link-menu {
+  width: 25vw;
   display: flex;
   justify-content: space-between;
 
   a {
-    font-size: 14px;
+    font-size: 18px;
+    font-family: "Karla", sans-serif;
     line-height: 29px;
-    color: #000000;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
   }
 
   a:link {
     text-decoration: none;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+  }
+
+  a:hover::after,
+  li > a.active-nav::after {
+    width: 100%;
+    background: #212121;
   }
 }
