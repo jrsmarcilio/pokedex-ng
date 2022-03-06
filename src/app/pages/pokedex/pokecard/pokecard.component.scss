@@ -1,0 +1,39 @@
+.pokecard-content {
+  margin-top: 25px;
+  height: 14.5vh;
+  width: 19vw;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f6f7f9;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.pokercard-bg {
+  position: absolute;
+  height: 14.5vh;
+  width: 10vw;
+  background: linear-gradient(270deg, #b33327 0.15%, #d93e30 100%);
+  border-radius: 0px 8px 8px 0px;
+  z-index: 2;
+}
+
+.pokercard-description {
+  width: 19vw;
+  z-index: 3;
+}
+
+.pokemon-power {
+  display: flex;
+  flex-direction: row;
+}
+
+.power {
+  flex: 1;
+}
+
+.power-ellipses {
+  border: 3px solid #212121;
+  // box-sizing: border-box;
+  border-radius: 100px;
+}

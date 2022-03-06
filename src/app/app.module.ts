@@ -2,19 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { IndexComponent } from './components/index/index.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { PokedexComponent } from './pages/pokedex/pokedex.component';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    IndexComponent,
-    HeaderComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, HeaderComponent, HomeComponent],
+  imports: [BrowserModule, PagesModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
